@@ -12,7 +12,7 @@ public class Ejemplo1Receptor {
 	 	
 		int puerto = sc.nextInt();
 		
-		final int MAX_LON = 10;
+		final int MAX_LON = 450;
 
 		try{
 			
@@ -27,6 +27,8 @@ public class Ejemplo1Receptor {
 			String mensaje = new String(almacen);
 			System.out.println(mensaje);
 			miSocket.close();
+			
+			System.out.print("Servidor apagado \n");
 
 		}catch (Exception ex ){
 			ex.printStackTrace();
